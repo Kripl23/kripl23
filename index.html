@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roman Kolchin — Python Developer. Backend, APIs, bots, automation.">
+  <title>Kripl — Python Developer</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#" class="nav-logo">kripl<span class="accent">.py</span></a>
+    <div class="nav-links">
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="repl-wrap">
+      <div class="repl-bar">
+        <span class="dot r"></span><span class="dot a"></span><span class="dot g"></span>
+        <span class="repl-title">Python 3.12 — interactive</span>
+      </div>
+      <div class="repl-body">
+        <div class="repl-line">
+          <span class="prompt">&gt;&gt;&gt;&nbsp;</span><span id="l1" class="code"></span>
+        </div>
+        <div class="repl-line" id="row2" style="display:none">
+          <span class="prompt">...&nbsp;&nbsp;&nbsp;</span><span id="l2" class="code"></span>
+        </div>
+        <div class="repl-line" id="row3" style="display:none">
+          <span class="prompt">...&nbsp;&nbsp;&nbsp;</span><span id="l3" class="code"></span>
+        </div>
+        <div class="repl-line" id="row4" style="display:none">
+          <span class="prompt">...&nbsp;&nbsp;&nbsp;</span><span id="l4" class="code"></span>
+        </div>
+        <div class="repl-line" id="row5" style="display:none">
+          <span class="prompt">&gt;&gt;&gt;&nbsp;</span><span id="l5" class="code"></span>
+        </div>
+        <div class="repl-output" id="output" style="display:none">
+          <div class="out-name">Roman Kolchin</div>
+          <div class="out-role">Python Developer</div>
+          <div class="out-tags">
+            <span class="tag">backend</span>
+            <span class="tag">automation</span>
+            <span class="tag">bots</span>
+          </div>
+        </div>
+        <div class="repl-line" id="row-cursor" style="display:none">
+          <span class="prompt">&gt;&gt;&gt;&nbsp;</span><span class="cursor-blink">▌</span>
+        </div>
+      </div>
+    </div>
+    <a href="#skills" class="scroll-hint">scroll ↓</a>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-tag"># skills</div>
+    <div class="imports">
+      <div class="import-line">
+        <span class="kw">import</span>
+        <span class="mod">Python</span><span class="sep">,</span>
+        <span class="mod">FastAPI</span><span class="sep">,</span>
+        <span class="mod">Django</span>
+      </div>
+      <div class="import-line">
+        <span class="kw">from</span>
+        <span class="mod">databases</span>
+        <span class="kw">import</span>
+        <span class="mod">PostgreSQL</span><span class="sep">,</span>
+        <span class="mod">Redis</span>
+      </div>
+      <div class="import-line">
+        <span class="kw">from</span>
+        <span class="mod">messaging</span>
+        <span class="kw">import</span>
+        <span class="mod">RabbitMQ</span><span class="sep">,</span>
+        <span class="mod">aiohttp</span>
+      </div>
+      <div class="import-line">
+        <span class="kw">from</span>
+        <span class="mod">bots</span>
+        <span class="kw">import</span>
+        <span class="mod">aiogram</span><span class="sep">,</span>
+        <span class="mod">Telethon</span>
+      </div>
+      <div class="import-line">
+        <span class="kw">from</span>
+        <span class="mod">parsing</span>
+        <span class="kw">import</span>
+        <span class="mod">BeautifulSoup</span><span class="sep">,</span>
+        <span class="mod">Selenium</span>
+      </div>
+      <div class="import-line">
+        <span class="kw">from</span>
+        <span class="mod">devops</span>
+        <span class="kw">import</span>
+        <span class="mod">Docker</span><span class="sep">,</span>
+        <span class="mod">Git</span><span class="sep">,</span>
+        <span class="mod">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-tag"># projects</div>
+    <div class="projects-grid">
+
+      <a class="card" href="https://github.com/Kripl23" target="_blank" rel="noopener">
+        <div class="card-header">
+          <div class="card-comment"># telegram · monitoring</div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-name">Monitoring Bot</div>
+        <div class="card-desc">Telegram bot for system monitoring and automatic alerting. Tracks server health and notifies on anomalies in real time.</div>
+        <div class="card-stack">
+          <span>Python</span><span>aiogram</span><span>Redis</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/Kripl23" target="_blank" rel="noopener">
+        <div class="card-header">
+          <div class="card-comment"># rest api · sports</div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-name">Football FastAPI</div>
+        <div class="card-desc">High-performance REST API for football statistics and live data with async queries and response caching.</div>
+        <div class="card-stack">
+          <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/Kripl23" target="_blank" rel="noopener">
+        <div class="card-header">
+          <div class="card-comment"># scraper · automation</div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-name">Soccerway Parser</div>
+        <div class="card-desc">Automated web scraper for collecting sports match data across multiple leagues and seasons.</div>
+        <div class="card-stack">
+          <span>Python</span><span>BeautifulSoup</span><span>Selenium</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/Kripl23" target="_blank" rel="noopener">
+        <div class="card-header">
+          <div class="card-comment"># auth · microservice</div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-name">Auth Service</div>
+        <div class="card-desc">Secure authentication microservice with JWT and OAuth2, built for production-grade workloads.</div>
+        <div class="card-stack">
+          <span>FastAPI</span><span>JWT</span><span>PostgreSQL</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-tag"># contact</div>
+    <div class="contact-block">
+      <a href="https://github.com/Kripl23" class="contact-row" target="_blank" rel="noopener">
+        <span class="contact-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </span>
+        <span class="contact-key">github</span>
+        <span class="contact-sep">→</span>
+        <span class="contact-val">Kripl23</span>
+      </a>
+      <a href="https://linkedin.com/in/roman-kolchin" class="contact-row" target="_blank" rel="noopener">
+        <span class="contact-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </span>
+        <span class="contact-key">linkedin</span>
+        <span class="contact-sep">→</span>
+        <span class="contact-val">roman-kolchin</span>
+      </a>
+      <a href="mailto:krippi22322@gmail.com" class="contact-row">
+        <span class="contact-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </span>
+        <span class="contact-key">email</span>
+        <span class="contact-sep">→</span>
+        <span class="contact-val">krippi22322@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>built with Python spirit &amp; plain HTML</span>
+  </footer>
+
+  <script>
+    const lines = [
+      { id: 'l1', row: null,   text: 'me = Developer(' },
+      { id: 'l2', row: 'row2', text: '    name  = "Roman Kolchin",' },
+      { id: 'l3', row: 'row3', text: '    role  = "Python Developer",' },
+      { id: 'l4', row: 'row4', text: ')' },
+      { id: 'l5', row: 'row5', text: 'print(me)' },
+    ];
+
+    const BASE_SPEED = 38;
+    const PAUSE = 160;
+
+    function typeInto(el, text, cb) {
+      let i = 0;
+      (function tick() {
+        el.textContent = text.slice(0, ++i);
+        if (i < text.length) setTimeout(tick, BASE_SPEED + Math.random() * 22);
+        else if (cb) setTimeout(cb, PAUSE);
+      })();
+    }
+
+    function runLines(idx) {
+      if (idx >= lines.length) {
+        document.getElementById('output').style.display = 'block';
+        document.getElementById('row-cursor').style.display = 'flex';
+        return;
+      }
+      const { id, row, text } = lines[idx];
+      if (row) document.getElementById(row).style.display = 'flex';
+      typeInto(document.getElementById(id), text, () => runLines(idx + 1));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => setTimeout(() => runLines(0), 600));
+  </script>
+</body>
+</html>
